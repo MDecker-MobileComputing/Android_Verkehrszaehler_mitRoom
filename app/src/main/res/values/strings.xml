@@ -4,10 +4,10 @@
 
     <string name="menue_button_zaehlen">Fahrzeuge zählen</string>
     <string name="menue_button_anlegen">Zähler anlegen</string>
-    <string name="menue_button_loeschen">Alle Zähler löschen</string>
+
+    <string name="button_alle_loeschen">Alle Zähler löschen</string>
 
     <string name="button_zurueck">Zurück zum Hauptmenü</string>
-
     <string name="button_neuer_zaehler">Zähler anlegen</string>
 
     <string name="hint_name_neuer_zaehler">Name für neuen Zähler</string>

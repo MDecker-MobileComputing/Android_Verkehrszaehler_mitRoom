@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import de.mide.room.verkehrszaehler.activities.ZaehlenActivity;
 import de.mide.room.verkehrszaehler.activities.ZaehlerAnlegenActivity;
 
 /**
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onButtonZaehlen(View view) {
 
+        Intent intent = new Intent(this, ZaehlenActivity.class);
+        startActivity(intent);
     }
 
     /**

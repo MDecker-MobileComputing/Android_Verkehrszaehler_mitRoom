@@ -28,6 +28,13 @@ public abstract class MeineDatenbank extends RoomDatabase {
     private static MeineDatenbank SINGLETON_INSTANCE = null;
 
     /**
+     * Getter für DAO.
+     *
+     * @return  DAO für CRUD-Operationen auf der einzigen Tabelle der App.
+     */
+    public abstract VerkehrszaehlerDao verkehrszaehlerDao();
+
+    /**
      * Getter für Singleton-Instanz der vorliegenden Klasse; bei Bedarf wird diese Instanz
      * erzeugt.
      *
