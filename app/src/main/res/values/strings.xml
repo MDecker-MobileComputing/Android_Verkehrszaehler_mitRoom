@@ -20,5 +20,11 @@
     <string name="dialog_zaehlername_leer">Es wurde kein Zählername eingegeben.</string>
     <string name="dialog_alle_loeschen_fragen">Wollen Sie wirklich alle Zähler unwiederbringlich löschen?</string>
     <string name="dialog_alle_geloescht">Alle Zähler wurden gelöscht.</string>
+    <string name="dialog_zaehler_angelegt">Zähler wurde angelegt.</string>
+
+    <string name="activity_title_neue_zaehler">Neue Zähler anlegen</string>
+    <string name="activity_title_zaehlen">Zählung durchführen</string>
+
+    <string name="button_plus_eins">+1</string>
 
 </resources>

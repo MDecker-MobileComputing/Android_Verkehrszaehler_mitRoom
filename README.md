@@ -8,6 +8,16 @@ There is also a variant of this app which does use SQLite directly (i.e. does no
 
 ----
 
+## Screenshots ##
+
+![Screenshot 1](screenshot_1.png)  ![Screenshot 2](screenshot_2.png)
+
+![Screenshot 3](screenshot_3.png)
+
+<br>
+
+----
+
 ## License ##
 
 See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Clause License).

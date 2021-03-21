@@ -35,6 +35,8 @@ public class ZaehlerAnlegenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zaehler_anlegen);
 
+        setTitle( R.string.activity_title_neue_zaehler );
+
         _neuerZaehlerEditText = findViewById(R.id.neuerZaehlerName);
 
         MeineDatenbank meineDatenbank = MeineDatenbank.getSingletonInstance(this);
@@ -62,8 +64,14 @@ public class ZaehlerAnlegenActivity extends AppCompatActivity {
 
             ZaehlerEntity zaehlerEntity = new ZaehlerEntity();
             zaehlerEntity.zaehlerName = zaehlerName;
-            zaehlerEntity.zaehlerWert = 0;
+            //zaehlerEntity.zaehlerWert = 0;
             _dao.insertVerkehrzaehler(zaehlerEntity);
+
+            _neuerZaehlerEditText.setText("");
+
+            String title     = getString(R.string.dialog_titel_erfolg    );
+            String nachricht = getString(R.string.dialog_zaehler_angelegt);
+            DialogHelfer.zeigeDialog(this, title, nachricht);
         }
     }
 

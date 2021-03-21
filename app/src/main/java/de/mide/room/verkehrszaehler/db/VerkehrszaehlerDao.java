@@ -1,10 +1,13 @@
 package de.mide.room.verkehrszaehler.db;
 
+import android.database.Cursor;
+
 import androidx.annotation.NonNull;
 import androidx.room.Dao;
 import androidx.room.Entity;
 import androidx.room.Insert;
 import androidx.room.PrimaryKey;
+import androidx.room.Query;
 
 /**
  * Interface aus dem das DAO erzeugt wird (DAO: Data Access Object), siehe auch die Doku
@@ -25,5 +28,24 @@ public interface VerkehrszaehlerDao {
      */
     @Insert
     public void insertVerkehrzaehler(ZaehlerEntity neuerZaehler);
+
+    /**
+     * Query für Listendarstellung; liefert ein {@link Cursor}-Objekt zurück.
+     *
+     * @return  Cursor-Objekt, das die Liste aller Zähler repräsentiert.
+     *          Einträge sind aufsteigend nach Zählername sortiert.
+     */
+    @Query("SELECT * FROM ZaehlerEntity ORDER BY zaehler_name ASC")
+    public Cursor getCursorFuerListe();
+
+    /**
+     * Zähler für bestimmte Fahrzeug um +1 erhöhen.
+     *
+     * @param zaehlerName  Name des Zählers, der erhöht werden soll.
+     *
+     * @return Anzahl der Zeilen, die in der Tabelle geändert wurden; sollte immer <code>1</code> sein.
+     */
+    @Query("UPDATE ZaehlerEntity SET zaehler_wert = zaehler_wert+1 WHERE zaehler_name like :zaehlerName")
+    public int inkrementZaehler(String zaehlerName);
 
 }
