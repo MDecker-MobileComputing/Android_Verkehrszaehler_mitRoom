@@ -9,10 +9,16 @@
 
     <string name="button_zurueck">Zurück zum Hauptmenü</string>
     <string name="button_neuer_zaehler">Zähler anlegen</string>
+    <string name="button_ja_alle_loeschen">Ja, alle löschen</string>
+    <string name="button_abbrechen">Abbrechen</string>
 
     <string name="hint_name_neuer_zaehler">Name für neuen Zähler</string>
 
+    <string name="dialog_titel_erfolg">Erfolg</string>
     <string name="dialog_titel_fehler">Fehler</string>
+    <string name="dialog_titel_sicherheitsfrage">Sicherheitsfrage</string>
     <string name="dialog_zaehlername_leer">Es wurde kein Zählername eingegeben.</string>
+    <string name="dialog_alle_loeschen_fragen">Wollen Sie wirklich alle Zähler unwiederbringlich löschen?</string>
+    <string name="dialog_alle_geloescht">Alle Zähler wurden gelöscht.</string>
 
 </resources>

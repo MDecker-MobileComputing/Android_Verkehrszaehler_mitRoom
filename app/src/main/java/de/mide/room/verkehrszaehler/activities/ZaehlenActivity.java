@@ -15,7 +15,7 @@ import android.os.Bundle;
 public class ZaehlenActivity extends AppCompatActivity {
 
     /**
-     * Initialisiert Activity.
+     * Lifecycle-Methode, initialisiert Activity.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {

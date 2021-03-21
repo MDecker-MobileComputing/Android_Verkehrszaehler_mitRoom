@@ -27,7 +27,7 @@ public class ZaehlerAnlegenActivity extends AppCompatActivity {
     private VerkehrszaehlerDao _dao = null;
 
     /**
-     * Initialisiert die Activity.
+     * Lifecycle-Methode, initialisiert Activity.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
